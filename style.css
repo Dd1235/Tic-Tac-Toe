@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg-color : #E4D9FF;
+    --msg-color: #FF0054;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    background-color: var(--bg-color);
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Honk', sans-serif;
+}
+
+.container{
+    /* whatever you're seeing, 70% of that height with container */
+    height: 70vh; 
+
+
+    /* text-align: center; will only work if child div is set to display: blcok or inline-block  */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    /* 1% of viewports smaller dimension */
+    height:60vmin;
+    width: 60vmin;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* wrap over if insufficient place */
+    justify-content: center;
+    gap: 1.5vmin;
+}
+/* buttons by default are inline elements, taking space up wiht the flow of the container, if you do display: block that will change , can also do display: inline-block*/
+.box{
+    background-color: #FEFFFE;
+    height: 18vmin;
+    width: 18vmin;
+    /* root elements font size */
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    font-size: 8vmin;
+    color: #FF1654;
+}
+
+
+#reset-btn{
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: black;
+    font-size: 1.25rem;
+    color: #FEFFFE;
+
+}
+
+.msg {
+    padding: 1rem;
+}
+
+#msg{
+    font-size: 3rem;
+    color: var(--msg-color);
+    visibility: hidden;
+}
