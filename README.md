@@ -1,3 +1,4 @@
 # Tic-Tac-Toe
 
-Made from youtube tutorials
+
+Simple Tic-Tac-Toe game I made while learning JS hosted [here](https://zingy-dodol-a18616.netlify.app)
